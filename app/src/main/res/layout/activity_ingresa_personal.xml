@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlanco"
+    tools:context=".vista.IngresaPersonal">
+
+
+    <TextView
+        android:id="@+id/lblMenuConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:text="Registro Personas"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/lblDatosPersonales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="197dp"
+        android:background="@color/colorNegro"
+        android:text="Datos Personales"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtApellidoMaterno"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="APELLIDO MATERNO"
+        android:inputType="textCapCharacters"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDireccion"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="NOMBRES"
+        android:inputType="textCapCharacters"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:hint="DIRECCION"
+        android:inputType="textCapCharacters"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtApellidoMaterno"
+        android:layout_alignTop="@+id/txtNombres"
+        android:ems="10"
+        android:hint="FECHA NACIMIENTO"
+        android:inputType="textCapCharacters"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtApellidoPaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="APELLIDO PATERNO"
+        android:inputType="textCapCharacters"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtApellidoMaterno"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="DOCUMENTO IDENTIDAD"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spTipoDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblDatosPersonales"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/lblDatosPersonales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:background="@color/colorNegro"
+        android:text="Tipo Documento"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco" />
+
+    <TextView
+        android:id="@+id/lblCargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:background="@color/colorNegro"
+        android:text="Cargo"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco" />
+
+    <Spinner
+        android:id="@+id/spCargo"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblCargo"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/lblSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_above="@+id/txtApellidoPaterno"
+        android:layout_centerHorizontal="true"
+        android:text="SEXO:" />
+
+    <Spinner
+        android:id="@+id/spSexo"
+        android:layout_width="170dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/txtApellidoMaterno"
+        android:layout_alignParentEnd="true"
+        android:spinnerMode="dialog" />
+
+    <ImageButton
+        android:id="@+id/imbFechaNacimiento"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/txtNombres"
+        android:layout_toEndOf="@+id/txtFechaNacimiento"
+        android:background="@color/colorBlanco"
+        app:srcCompat="@drawable/calendario_hora_n" />
+
+    <Button
+        android:id="@+id/btnRegistraMovimiento"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/boton_registra_persona"
+        android:text="Registrar"
+        android:textColor="@color/colorBlanco" />
+
+    <Button
+        android:id="@+id/btnVolverMenuMovimiento"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/boton_volver_menu"
+        android:text="Volver a Menu"
+        android:textColor="@color/colorBlanco" />
+
+
+</RelativeLayout>

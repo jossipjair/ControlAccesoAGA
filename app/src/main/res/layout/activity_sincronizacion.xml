@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlanco"
+    tools:context=".vista.Sincronizacion">
+
+    <TextView
+        android:id="@+id/lblMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sincroniza Tablas"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/chkCargo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lblMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CARGO"/>
+
+    <CheckBox
+        android:id="@+id/chkCentroCosto"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkCargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CENTRO DE COSTO - VEHICULOS"/>
+
+    <CheckBox
+        android:id="@+id/chkEmpresa"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkCentroCosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMPRESA"/>
+
+    <CheckBox
+        android:id="@+id/chkEstado"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESTADO"/>
+
+    <CheckBox
+        android:id="@+id/chkMotivoMovimiento"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOTIVO DE MOVIMIENTO"/>
+
+    <CheckBox
+        android:id="@+id/chkMovimientoAcceso"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkMotivoMovimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOVIMIENTO DE ACCESO"/>
+
+    <CheckBox
+        android:id="@+id/chkPersonal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkMovimientoAcceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PERSONAL - TRABAJADORES"/>
+
+    <CheckBox
+        android:id="@+id/chkSucursal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUCURSAL"/>
+
+    <CheckBox
+        android:id="@+id/chkTipoAcceso"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkSucursal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIPO DE ACCESO"/>
+
+    <CheckBox
+        android:id="@+id/chkTipoDocumentoIdentidad"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkTipoAcceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIPO DE DOCUMENTO DE IDENTIDAD"/>
+
+    <CheckBox
+        android:id="@+id/chkTipoSexo"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkTipoDocumentoIdentidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEXO"/>
+
+
+    <CheckBox
+        android:id="@+id/chkTodas"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/chkTipoSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="SELECCIONAR TODO"/>
+    <Button
+        android:id="@+id/btnSincroniza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkTodas"
+        android:background="@color/colorAzul"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold"
+        android:text="INCIAR SINCRONIZACION"/>
+
+</RelativeLayout>
